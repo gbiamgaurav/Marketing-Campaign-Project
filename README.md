@@ -32,6 +32,15 @@ The dataset can be downloaded from [This Link](https://www.kaggle.com/datasets/s
 
 
 
+## Feature Engineering
+We perform feature engineering to enhance the predictive power of our models:
+
+* Encoding categorical variables
+* Scaling numerical features
+
+
+
+
 ## Model Building
 The project uses several machine learning algorithms to build predictive models, including:
 * Logistic Regression
@@ -41,34 +50,23 @@ The project uses several machine learning algorithms to build predictive models,
 * Support Vector Machines (SVM)
 
 
-## Feature Engineering
-We perform feature engineering to enhance the predictive power of our models:
-
-Encoding categorical variables
-Scaling numerical features
-Creating interaction terms
-
-
-## Model Training
-We use scikit-learn to train and evaluate our models. The training script (train.py) includes hyperparameter tuning using GridSearchCV for optimal performance.
-
 
 ## Evaluation
 The performance of the models is evaluated using the following metrics:
 
-Accuracy
-Precision
-Recall
-F1 Score
-ROC AUC
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* ROC AUC
 
 
 ## Contributing
 We welcome contributions to improve the project. Here are some ways you can contribute:
 
-Fix bugs and issues
-Add new features or models
-Improve documentation
+* Fix bugs and issues
+* Add new features or models
+* Improve documentation
 
 To contribute, please fork the repository, create a new branch, and submit a pull request.
 
