@@ -1,6 +1,16 @@
 ## Marketing Campaign Prediction
 This repository contains a machine learning project aimed at predicting the success of marketing campaigns. By analyzing past campaign data, we develop models that can forecast the effectiveness of future campaigns, helping businesses optimize their marketing strategies.
 
+## Workflow to follow
+1. Update config.yaml
+2. Update schema.yaml
+3. Update params.yaml
+4. Update the config_entity.py
+5. Update the configuration manager in src/config
+6. Update the components
+7. Update the pipeline
+8. Update main.py
+
 
 ## Table of Contents
 Project Overview
