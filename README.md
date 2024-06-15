@@ -37,9 +37,12 @@ The dataset can be downloaded from [This Link](https://www.kaggle.com/datasets/s
 ```git clone https://github.com/gbiamgaurav/Marketing-Campaign-Project.git```
 
 
-## Run the following commands
+## Run the following commands to set up the env
 ```bash init_setup.sh```
 
+
+## Run the file
+```python main.py```
 
 
 ## Feature Engineering
