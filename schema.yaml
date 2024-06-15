@@ -1,2 +1,15 @@
 
-key: value
+COLUMNS: 
+  customer_id   : int64 
+  age           : int64 
+  gender        : object
+  annual_income : int64 
+  credit_score  : int64 
+  employed      : object
+  marital_status: object
+  no_of_children: int64 
+  responded     : object
+
+
+TARGET_COLUMN:
+  name: responded
