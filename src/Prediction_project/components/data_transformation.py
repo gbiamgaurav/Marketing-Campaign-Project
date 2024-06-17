@@ -82,7 +82,7 @@ class DataTransformation:
 
             # Combine X_transformed and y back into one Dataframe
             self.transformed_df = pd.DataFrame(X_transformed, columns=column_names)
-            self.transformed_df["target"] = y_resampled
+            self.transformed_df["responded"] = y_resampled
 
             logger.info("Data preprocessing completed")
 
