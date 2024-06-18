@@ -1,0 +1,63 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/Prediction_project/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: dff84a48dc54bb963aa1123e64e53a1f
+      size: 1097
+    - path: src/Prediction_project/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: af36171b2c044ddb880fbe9c30e50431
+      size: 877
+    outs:
+    - path: artifacts/data_ingestion/data.zip
+      hash: md5
+      md5: 3848ea3a94a80c0b81247cab7a3af8a8
+      size: 784
+  data_validation:
+    cmd: python src/Prediction_project/pipeline/stage_02_data_validation.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: dff84a48dc54bb963aa1123e64e53a1f
+      size: 1097
+    - path: src/Prediction_project/pipeline/stage_02_data_validation.py
+      hash: md5
+      md5: ef4bcbdc1f82ef06f13d65c04e699fbb
+      size: 854
+    outs:
+    - path: artifacts/data_validation
+      hash: md5
+      md5: 0ccb3ea5849272ff03be5ab71786b9ff.dir
+      size: 23
+      nfiles: 1
+  data_transformation:
+    cmd: python src/Prediction_project/pipeline/stage_03_data_transformation.py
+    deps:
+    - path: artifacts/data_ingestion/data.zip
+      hash: md5
+      md5: 3848ea3a94a80c0b81247cab7a3af8a8
+      size: 784
+    - path: config/config.yaml
+      hash: md5
+      md5: dff84a48dc54bb963aa1123e64e53a1f
+      size: 1097
+    - path: src/Prediction_project/pipeline/stage_03_data_transformation.py
+      hash: md5
+      md5: 0208022ecff0345ad5b7ff82d4d59867
+      size: 998
+    outs:
+    - path: artifacts/data_transformation/preprocessor.joblib
+      hash: md5
+      md5: d27352242f4f4bca1cbfd7587054d2a9
+      size: 4099
+    - path: artifacts/data_transformation/test.csv
+      hash: md5
+      md5: 73dde3054c2ec1504c9488415548a7b9
+      size: 1165
+    - path: artifacts/data_transformation/train.csv
+      hash: md5
+      md5: 50e7b8bb41e3540d5c8c66743bc6bfc8
+      size: 4106

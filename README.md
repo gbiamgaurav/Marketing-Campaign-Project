@@ -45,6 +45,13 @@ The dataset can be downloaded from [This Link](https://www.kaggle.com/datasets/s
 ```python main.py```
 
 
+## Run the DVC Commands
+```dvc init```
+
+
+```dvc repro```
+
+
 ## Feature Engineering
 We perform feature engineering to enhance the predictive power of our models:
 
