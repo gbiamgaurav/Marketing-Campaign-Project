@@ -72,13 +72,15 @@ The project uses several machine learning algorithms to build predictive models,
 
 
 ## Evaluation
-The performance of the models is evaluated using the following metrics:
+The performance of the models is evaluated from the following metrics:
 
 * Accuracy
 * Precision
 * Recall
 * F1 Score
 * ROC AUC
+
+
 
 
 ## Contributing
