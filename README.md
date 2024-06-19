@@ -52,6 +52,9 @@ The dataset can be downloaded from [This Link](https://www.kaggle.com/datasets/s
 ```dvc repro```
 
 
+```dvc dag```
+
+
 ## Feature Engineering
 We perform feature engineering to enhance the predictive power of our models:
 
