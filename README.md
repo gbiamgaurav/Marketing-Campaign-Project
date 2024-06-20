@@ -55,6 +55,12 @@ The dataset can be downloaded from [This Link](https://www.kaggle.com/datasets/s
 ```dvc dag```
 
 
+## Run the Applications
+
+```streamlit run app.py```
+
+```python test.py```
+
 ## Feature Engineering
 We perform feature engineering to enhance the predictive power of our models:
 
